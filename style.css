@@ -3,7 +3,9 @@ html, body
   height: 100%;
   margin: 0;
 }
-
+center{
+	height:100%;
+}
 body
 {
 	background: linear-gradient(0deg, rgba(79,7,250,1) 0%, rgba(158,56,246,1) 100%);
