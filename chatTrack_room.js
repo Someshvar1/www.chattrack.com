@@ -1,3 +1,5 @@
+var user_name_room=localStorage.getItem("username");
+document.getElementById("welcome").innerHTML="Welcome " + user_name_room;
 //ADD YOUR FIREBASE LINKS HERE
 // Your web app's Firebase configuration
 var firebaseConfig = {
@@ -25,4 +27,8 @@ function addRoom(){
           purpose:"adding room name"
       });
       localStorage.setItem("roomname",roomname);
+  }
+  function logout(){
+        localStorage.setItem("username","");
+        window.location="index.html";
   }
