@@ -20,7 +20,7 @@ function addRoom(){
           purpose:"adding room name"
       });
       localStorage.setItem("roomname",roomname);
-      window.location="chattrackpage.html"
+      window.location="chattrack_page.html"
   }
   function logout(){
         localStorage.setItem("username","");
