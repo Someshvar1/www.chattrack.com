@@ -23,7 +23,7 @@ function addRoom(){
       window.location="chattrack_page.html"
   }
   function logout(){
-        localStorage.setItem("username","");
+        localStorage.removeItem("username");
         window.location="index.html";
   }
   function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
