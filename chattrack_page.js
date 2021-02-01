@@ -1,4 +1,5 @@
 //YOUR FIREBASE LINKS
+// Your web app's Firebase configuration
 var firebaseConfig = {
       apiKey: "AIzaSyCAF0n7sQfEvuEk_vwR2Xc9xUwip9Q3okI",
       authDomain: "kwitter-28575.firebaseapp.com",
@@ -26,8 +27,8 @@ function getData() { firebase.database().ref("/"+room_name).on('value', function
          firebase_message_id = childKey;
          message_data = childData;
 //Start code
-      console.log(firebase_message_id);
-      console.log(message_data);
+      /*console.log(firebase_message_id);
+      console.log(message_data);*/
       name=message_data['name'];
       message=message_data['message'];
       like=message_data['like'];
